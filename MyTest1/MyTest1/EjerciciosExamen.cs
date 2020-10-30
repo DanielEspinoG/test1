@@ -126,6 +126,8 @@ namespace MyTest1
                 i+=3;
             }
         }
+
+        //Hacer una función que reciba un número entero e imprima todos los números desde el 0 hasta ese número (usar for)
     }
 }
 
