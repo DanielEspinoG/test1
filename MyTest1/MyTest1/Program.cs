@@ -68,6 +68,14 @@ namespace MyTest1
             EjerciciosExamen.ExEjercicio3(20.2, 100);
 
             EjerciciosExamen.ExEjercicio4(20.2, 100);
+
+            EjerciciosExamen.ExEjercicio5(10, 4, 6);
+
+            EjerciciosExamen.ExEjercicio6(0, 0);
+
+            EjerciciosExamen.ExEjercicio7(80);
+
+            EjerciciosExamen.ExEjercicio8(10);
         }
 
     }
