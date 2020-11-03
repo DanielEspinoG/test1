@@ -131,15 +131,117 @@ namespace MyTest1
         //Hacer una función que reciba un número entero e imprima todos los números desde el 0 hasta ese número (usar for)
         public static void ExEjercicio9 (int x)
         {
-            int i = 0;
+            for (int i = 0; i <= x; i++)
+                System.Console.Write(i + ",");
 
-            while (i <= x)
-            {
+            System.Console.WriteLine("");
+
+        }
+
+
+        //lo mismo que el anterior, pero que no termine en ,
+        public static void ExEjercicio10(int x)
+        {
+            for (int i = 0; i < x; i++)
                 System.Console.Write (i + ",");
 
-                i++;
+            
+            if (x > 0)
+                System.Console.Write (x);
+
+        }
+
+        //una función que devuelva el mayor de 6 enteros. esta funcion debe ocupar una linea
+        public static int ExEjercicio11 (int a, int b, int c, int d, int e, int f)
+        {
+            return ExEjercicio6 (ExEjercicio5(a, b, c), ExEjercicio5(d, e, f));
+
+        }
+
+        //Hacer una función que se le pase un entero e imprima tantos asteriscos como ese entero que se le pasa. si se cuantas veces se repite es aconsejable
+        // un for, si no lo se un while.
+        public static void ExEjercicio12 (int x)
+        {
+            for (int i = 0; i < x; i++)
+                System.Console.Write("*");
+        }
+
+        //Lo mismo pero en vez de imprimir * imprime lo siguiente *+*+*
+        public static void ExEjercicio13 (int x)
+        {
+            for (int i = 0; i < x; i++)
+                if ((i % 2) == 0)
+                    System.Console.Write("*");
+                else
+                    System.Console.Write("+");
+        }
+
+        //lo mismo pero tiene que imprimir lo siguiente: *+-/*+-/
+        public static void ExEjercicio14 (int x)
+        {
+            for (int i = 0; i < x; i++)
+            {
+
+                int resto = i % 4;
+
+                switch (resto)
+                {
+                    case 0:
+                        System.Console.Write("*");
+                        break;
+                    case 1:
+                        System.Console.Write("+");
+                        break;
+                    case 2:
+                        System.Console.Write("-");
+                        break;
+                    case 3:
+                        System.Console.Write("/");
+                        break;
+                }
             }
         }
+
+        //hacer una función que reciba un numero y en función de ese número que imprima lo siguiente: si le paso un 3
+        //***
+        //***
+        //***
+        public static void ExEjercicio15 (int x)
+        {
+            //este "for" controla la fila
+            for (int f = 0; f < x; f++)
+            {
+                //este "for" controla la columna
+                for (int c = 0; c < x; c++)
+                    System.Console.Write("*");
+
+                System.Console.WriteLine("");
+            }
+        }
+
+        //lo mismo que antes: 3
+        //***
+        //+++
+        //***
+        public static void ExEjercicio16 (int x)
+        {
+            for (int f = 0; f < x; f++)
+            {
+                for (int c = 0; c < x; c++)
+                    if ((x % 2) == 0)
+                        System.Console.Write("*");
+                    else
+                        System.Console.Write("+");
+            }
+            System.Console.WriteLine("");
+
+        }
+
+        //lo mismo que antes: 3
+        //*+*
+        //+*+
+        //*+*
+
     }
 }
 

@@ -60,7 +60,7 @@ namespace MyTest1
             Ejercicios.EjerciciosSerie6();
 
             Ejercicios.ImprimirAscii();
-            */
+            
             EjerciciosExamen.ExEjercicio1(1, 3);
 
             EjerciciosExamen.ExEjercicio2(8.6, 2.3);
@@ -78,7 +78,21 @@ namespace MyTest1
             EjerciciosExamen.ExEjercicio8(10);
 
             EjerciciosExamen.ExEjercicio9(20);
+
+            EjerciciosExamen.ExEjercicio10(-4);
+
+            EjerciciosExamen.ExEjercicio11(1, 2, 3, 4, 5, 6);
+            
+            EjerciciosExamen.ExEjercicio12(5);
+
+            EjerciciosExamen.ExEjercicio13(5);
+            
+            EjerciciosExamen.ExEjercicio14(20);
+            */
+            EjerciciosExamen.ExEjercicio15(3);
+
         }
+
 
     }
 }
