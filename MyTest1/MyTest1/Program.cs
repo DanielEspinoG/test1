@@ -76,6 +76,8 @@ namespace MyTest1
             EjerciciosExamen.ExEjercicio7(80);
 
             EjerciciosExamen.ExEjercicio8(10);
+
+            EjerciciosExamen.ExEjercicio9(20);
         }
 
     }

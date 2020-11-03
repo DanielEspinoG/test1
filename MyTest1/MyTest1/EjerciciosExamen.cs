@@ -121,13 +121,25 @@ namespace MyTest1
             int i = 0;
             while (i < x)
             {
-                System.Console.Write(i + ",");
+                System.Console.Write (i + ",");
 
                 i+=3;
             }
+            System.Console.WriteLine ("");
         }
 
         //Hacer una función que reciba un número entero e imprima todos los números desde el 0 hasta ese número (usar for)
+        public static void ExEjercicio9 (int x)
+        {
+            int i = 0;
+
+            while (i <= x)
+            {
+                System.Console.Write (i + ",");
+
+                i++;
+            }
+        }
     }
 }
 
