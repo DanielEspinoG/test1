@@ -241,7 +241,94 @@ namespace MyTest1
         //*+*
         //+*+
         //*+*
+        public static void ExEjercicio17 (int x)
+        {
+            for (int f = 0; f < x; f++)
+            {
+                for (int c = 0; c < x; c++)
+                {
+                    int flag = c + f;
+                    if ((flag % 2) == 0)
+                        System.Console.Write("*");
+                    else
+                        System.Console.Write("+");
+                }
+                System.Console.WriteLine("");
+            }
+        }
 
+        // x = 3
+        //*
+        //**
+        //***
+        public static void ExEjercicio18(int x)
+        {
+            for (int f = 0; f < x; f++)
+            {
+                for (int c = 0; c <= f; c++)
+                {
+                        System.Console.Write("*");
+
+                }
+                System.Console.WriteLine("");
+            }
+        }
+
+        //x = 4
+        //   *
+        //  **
+        // ***
+        //****
+        public static void ExEjercicio19 (int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                int nEspacio = n - f - 1;
+                int nAsterisco = f + 1;     /*también puede ser = n - nEspacio*/
+                
+                for (int c = 0; c < nEspacio; c++)
+                    System.Console.Write(" ");
+
+                for (int c = 0; c < nAsterisco; c++)
+                    System.Console.Write("*");
+                
+
+                System.Console.WriteLine("");
+            }
+        }
+
+        //n = 5
+        //    **
+        //   *  *
+        //  *    *
+        // *      *
+        //*        *
+        public static void ExEjercicio20 (int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                int nEspacio1 = n - f - 1;
+                int nEspacio2 = f * 2;
+
+                for (int c = 0; c < nEspacio1; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+
+                for (int c = 0; c < nEspacio2; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+
+                System.Console.WriteLine("");
+            }
+
+        }
+
+        //n = 5
+        //    *
+        //   * *
+        //  *   *
+        // *     *
+        //*       *
     }
 }
 

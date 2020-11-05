@@ -88,8 +88,14 @@ namespace MyTest1
             EjerciciosExamen.ExEjercicio13(5);
             
             EjerciciosExamen.ExEjercicio14(20);
-            */
+            
             EjerciciosExamen.ExEjercicio15(3);
+            
+            EjerciciosExamen.ExEjercicio18(5);
+            
+            EjerciciosExamen.ExEjercicio19(4);
+            */
+            EjerciciosExamen.ExEjercicio20(5);
 
         }
 
