@@ -94,9 +94,29 @@ namespace MyTest1
             EjerciciosExamen.ExEjercicio18(5);
             
             EjerciciosExamen.ExEjercicio19(4);
-            */
+            
             EjerciciosExamen.ExEjercicio20(5);
+            
+            EjerciciosExamen.ExEjercicio21(5);
+            
+            EjerciciosExamen.ExEjercicio22(5);
 
+            EjerciciosExamen.ExEjercicio23(5);
+            
+            EjerciciosExamen.ExEjercicio24(4);
+            
+            //Animación por fotogramas
+            while (true)
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    EjerciciosExamen.ExEjercicio24(i);
+                    System.Threading.Thread.Sleep(50);
+                    System.Console.Clear();
+                }
+            }
+            */
+            EjerciciosExamen.ExEjercicio25();
         }
 
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Xml.Schema;
 
 namespace MyTest1
 {
@@ -80,10 +81,10 @@ namespace MyTest1
                     return c;
             }
         }
-             
+
         //Hacer una función que reciba 2 enteros y devuelva -1 si el primero es menor que el segundo,
         // 1 si el segundo es menor que el primero y 0 si son iguales
-        public static int ExEjercicio6 (int a, int b)
+        public static int ExEjercicio6(int a, int b)
         {
             if (a < b)
                 return -1;
@@ -95,41 +96,41 @@ namespace MyTest1
 
         //hacer una función que reciba un codigo de error y muestre por pantalla lo siguiente "error grave" si el error es 0,
         //"error moderado" si es 1, "error leve" si es 2, "error desconocido" en cualquier otro caso
-        public static void ExEjercicio7 (int code)
+        public static void ExEjercicio7(int code)
         {
             switch (code)
             {
                 case 0:
-                    System.Console.WriteLine ("Error grave");
+                    System.Console.WriteLine("Error grave");
                     break;
                 case 1:
-                    System.Console.WriteLine ("Error moderado");
+                    System.Console.WriteLine("Error moderado");
                     break;
                 case 2:
-                    System.Console.WriteLine ("Error leve");
+                    System.Console.WriteLine("Error leve");
                     break;
                 default:
-                    System.Console.WriteLine ("Error desconocido");
+                    System.Console.WriteLine("Error desconocido");
                     break;
             }
         }
 
         //Hacer una función que reciba un número y es función de ese número imprima la siguiente serie:
         //función(10) => 0,3,6,9,    función(0) => 0,   función(12) => 0,3,6,9,12,
-        public static void ExEjercicio8 (int x)
+        public static void ExEjercicio8(int x)
         {
             int i = 0;
             while (i < x)
             {
-                System.Console.Write (i + ",");
+                System.Console.Write(i + ",");
 
-                i+=3;
+                i += 3;
             }
-            System.Console.WriteLine ("");
+            System.Console.WriteLine("");
         }
 
         //Hacer una función que reciba un número entero e imprima todos los números desde el 0 hasta ese número (usar for)
-        public static void ExEjercicio9 (int x)
+        public static void ExEjercicio9(int x)
         {
             for (int i = 0; i <= x; i++)
                 System.Console.Write(i + ",");
@@ -143,31 +144,31 @@ namespace MyTest1
         public static void ExEjercicio10(int x)
         {
             for (int i = 0; i < x; i++)
-                System.Console.Write (i + ",");
+                System.Console.Write(i + ",");
 
-            
+
             if (x > 0)
-                System.Console.Write (x);
+                System.Console.Write(x);
 
         }
 
         //una función que devuelva el mayor de 6 enteros. esta funcion debe ocupar una linea
-        public static int ExEjercicio11 (int a, int b, int c, int d, int e, int f)
+        public static int ExEjercicio11(int a, int b, int c, int d, int e, int f)
         {
-            return ExEjercicio6 (ExEjercicio5(a, b, c), ExEjercicio5(d, e, f));
+            return ExEjercicio6(ExEjercicio5(a, b, c), ExEjercicio5(d, e, f));
 
         }
 
         //Hacer una función que se le pase un entero e imprima tantos asteriscos como ese entero que se le pasa. si se cuantas veces se repite es aconsejable
         // un for, si no lo se un while.
-        public static void ExEjercicio12 (int x)
+        public static void ExEjercicio12(int x)
         {
             for (int i = 0; i < x; i++)
                 System.Console.Write("*");
         }
 
         //Lo mismo pero en vez de imprimir * imprime lo siguiente *+*+*
-        public static void ExEjercicio13 (int x)
+        public static void ExEjercicio13(int x)
         {
             for (int i = 0; i < x; i++)
                 if ((i % 2) == 0)
@@ -177,7 +178,7 @@ namespace MyTest1
         }
 
         //lo mismo pero tiene que imprimir lo siguiente: *+-/*+-/
-        public static void ExEjercicio14 (int x)
+        public static void ExEjercicio14(int x)
         {
             for (int i = 0; i < x; i++)
             {
@@ -206,7 +207,7 @@ namespace MyTest1
         //***
         //***
         //***
-        public static void ExEjercicio15 (int x)
+        public static void ExEjercicio15(int x)
         {
             //este "for" controla la fila
             for (int f = 0; f < x; f++)
@@ -223,7 +224,7 @@ namespace MyTest1
         //***
         //+++
         //***
-        public static void ExEjercicio16 (int x)
+        public static void ExEjercicio16(int x)
         {
             for (int f = 0; f < x; f++)
             {
@@ -241,7 +242,7 @@ namespace MyTest1
         //*+*
         //+*+
         //*+*
-        public static void ExEjercicio17 (int x)
+        public static void ExEjercicio17(int x)
         {
             for (int f = 0; f < x; f++)
             {
@@ -267,7 +268,7 @@ namespace MyTest1
             {
                 for (int c = 0; c <= f; c++)
                 {
-                        System.Console.Write("*");
+                    System.Console.Write("*");
 
                 }
                 System.Console.WriteLine("");
@@ -279,19 +280,19 @@ namespace MyTest1
         //  **
         // ***
         //****
-        public static void ExEjercicio19 (int n)
+        public static void ExEjercicio19(int n)
         {
             for (int f = 0; f < n; f++)
             {
                 int nEspacio = n - f - 1;
                 int nAsterisco = f + 1;     /*también puede ser = n - nEspacio*/
-                
+
                 for (int c = 0; c < nEspacio; c++)
                     System.Console.Write(" ");
 
                 for (int c = 0; c < nAsterisco; c++)
                     System.Console.Write("*");
-                
+
 
                 System.Console.WriteLine("");
             }
@@ -303,7 +304,7 @@ namespace MyTest1
         //  *    *
         // *      *
         //*        *
-        public static void ExEjercicio20 (int n)
+        public static void ExEjercicio20(int n)
         {
             for (int f = 0; f < n; f++)
             {
@@ -329,6 +330,140 @@ namespace MyTest1
         //  *   *
         // *     *
         //*       *
+        public static void ExEjercicio21(int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                int nEspacio1 = n - f - 1;
+                int nEspacio2 = f * 2 - 1;
+                // int nEspacio = MaxValue (0, 2 * f - 1) soluciona el problema del -1 en la primera fila
+
+                for (int c = 0; c < nEspacio1; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+
+                for (int c = 0; c < nEspacio2; c++)
+                    System.Console.Write(" ");
+
+                if (f != 0)
+                    System.Console.Write("*");
+                else
+                    System.Console.Write("");
+
+                System.Console.WriteLine("");
+            }
+        }
+
+        //n = 5
+        //*        *
+        // *      *
+        //  *    *
+        //   *  *
+        //    **
+        public static void ExEjercicio22(int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                int nEspacio1 = f;
+                int nEspacio2 = (n - f - 1) * 2;
+
+                for (int c = 0; c < nEspacio1; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+
+                for (int c = 0; c < nEspacio2; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+
+                System.Console.WriteLine("");
+            }
+
+        }
+
+        public static void ExEjercicio23(int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                int nEspacio1 = f;
+                int nEspacio2 = ((n - f - 1) * 2) - 1;
+
+                for (int c = 0; c < nEspacio1; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+
+                for (int c = 0; c < nEspacio2; c++)
+                    System.Console.Write(" ");
+
+                if (f + 1 != n)
+                    System.Console.Write("*");
+                else
+                    System.Console.Write(" ");
+
+                System.Console.WriteLine("");
+            }
+        }
+
+        //n = 4
+        //   *
+        //  * *
+        // *   *
+        //*     *
+        //*     *
+        // *   *
+        //  * *
+        //   *
+        public static void ExEjercicio24(int n)
+        {
+            ExEjercicio21 (n);
+            ExEjercicio23 (n);
+
+        }
+
+        //hacer bandera americana
+        public static void ExEjercicio25 ()
+        {
+            for (int f = 0; f < 20; f++)
+            {
+
+                for (int c = 0; c <= 75; c++)
+                {
+                    int f2 = f / 2;
+
+                    if (0 <= c && c <= 20 && 0 <= f && f <= 9)
+                    {
+                        int flag = c + f;
+
+                        if ((flag % 2) == 0)
+                            System.Console.Write("+");
+                        else
+                            System.Console.Write(" ");
+                    
+                    }
+                    else if ((f2 % 2) == 0)
+                        System.Console.Write("*");
+                    else
+                        System.Console.Write(" ");
+
+                }
+                System.Console.WriteLine("");
+            }
+
+        }
+
+        //hacer bandera japonesa * es borde bandera
+
+        for (for -->20)
+        {
+            for (c-->75)
+            {
+                if (char==0 || c==74 || f==0 || f==19)
+                    scw(*)
+                else if (distance(37, 10, c, f)<5.0)
+                    scw("o")
+                else
+                    scw(" ")
+              scw("")
+
     }
 }
 
