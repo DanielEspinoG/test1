@@ -451,18 +451,23 @@ namespace MyTest1
         }
 
         //hacer bandera japonesa * es borde bandera
-
-        for (for -->20)
+        public static void ExEjercicio26()
         {
-            for (c-->75)
+            for (int f = 0; f < 20; f++)
             {
-                if (char==0 || c==74 || f==0 || f==19)
-                    scw(*)
-                else if (distance(37, 10, c, f)<5.0)
-                    scw("o")
-                else
-                    scw(" ")
-              scw("")
+                for (int c = 0; c < 75; c++)
+                {
+                    if (c == 0 || c == 74 || f == 0 || f == 19)
+                        System.Console.Write("*");
+                    else if (Geometry.CalculateDistance2D(37, 10, c, f) < 5.0)
+                        System.Console.Write("O");
+                    else
+                        System.Console.Write(" ");
+
+                }
+                System.Console.WriteLine("");
+            }
+        }
 
     }
 }

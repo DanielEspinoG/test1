@@ -105,6 +105,8 @@ namespace MyTest1
             
             EjerciciosExamen.ExEjercicio24(4);
             
+
+
             //Animación por fotogramas
             while (true)
             {
@@ -115,8 +117,12 @@ namespace MyTest1
                     System.Console.Clear();
                 }
             }
-            */
+            
+
+
             EjerciciosExamen.ExEjercicio25();
+            */
+            EjerciciosExamen.ExEjercicio26();
         }
 
 
