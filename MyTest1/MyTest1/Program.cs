@@ -121,8 +121,10 @@ namespace MyTest1
 
 
             EjerciciosExamen.ExEjercicio25();
-            */
+            
             EjerciciosExamen.ExEjercicio26();
+            */
+            EjerciciosExamen.ExEjercicio28(5);
         }
 
 

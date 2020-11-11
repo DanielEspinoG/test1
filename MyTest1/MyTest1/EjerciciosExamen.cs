@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection.Metadata.Ecma335;
 using System.Text;
 using System.Xml.Schema;
 
@@ -467,6 +468,40 @@ namespace MyTest1
                 }
                 System.Console.WriteLine("");
             }
+        }
+
+        //hacer una funcion que devuelva el sumatorio de un número de 6 = 1+2+3+4+5+6
+        public static int ExEjercicio27 (int n)
+        {
+            int result = 0;
+            for (int i = 1; i <= n; i++)
+                result += i;
+
+            return result;
+        }
+
+        //haz una función que devuelva 2 elevado a un número
+        public static int ExEjercicio28 (int n)
+        {
+            int result = 1;
+            for (int i = 0; i < n; i++)
+                result *= 2;
+
+            return result;
+        }
+        //forma correcta al elevar el número negativo
+        public static double ExEjercicio29(double n)
+        {
+            bool invert_value = n < 0;
+            if (invert_value)
+                n = -n;
+
+            double result = 1;
+            for (int i = 0; i < n; i++)
+                result *= 2.0;
+            if (invert_value)
+                result = 1.0 / result;
+            return result;
         }
 
     }
